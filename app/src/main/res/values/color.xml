@@ -1,0 +1,7 @@
+
+    <resources>
+        <color name="input_label">#11FF88</color>
+        <color name="input_label_optional">#11cc44</color>
+        <color name="result_label">#1188FF</color>
+        <color name="summary">#FF4422</color>
+    </resources>

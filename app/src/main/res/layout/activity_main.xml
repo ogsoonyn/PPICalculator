@@ -1,0 +1,471 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/resolution"
+                    android:textColor="@color/input_label"
+                    tools:context=".MainActivity"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|center_vertical" />
+
+                <EditText
+                    android:id="@+id/editText_Width"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.3"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="@string/times"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center" />
+
+                <EditText
+                    android:id="@+id/editText_Height"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.3"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:layout_gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/editText_Inch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:selectAllOnFocus="true"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/inch"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|center_vertical" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/hw_name"
+                    android:textColor="@color/input_label"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|center_vertical" />
+
+                <EditText
+                    android:id="@+id/editText_Name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:selectAllOnFocus="true"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:layout_gravity="center_vertical" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/refresh_rate"
+                    android:textColor="@color/input_label_optional"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|center_vertical" />
+
+                <SeekBar
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/refreshSlider"
+                    android:layout_weight="7"
+                    android:layout_gravity="center_vertical"
+                    android:max="@integer/refresh_rate_max"
+                    android:progress="@integer/refresh_rate_default" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refresh_rate_default_str"
+                    android:id="@+id/refreshText"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/dsi_lane_number"
+                    android:textColor="@color/input_label_optional"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|center_vertical" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/dsilaneRadioGroup">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dsi_lane_1"
+                        android:id="@+id/lane1"
+                        android:layout_weight="1.2"
+                        android:layout_gravity="center_vertical" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dsi_lane_2"
+                        android:id="@+id/lane2"
+                        android:layout_weight="1.2"
+                        android:layout_gravity="center_vertical" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dsi_lane_3"
+                        android:id="@+id/lane3"
+                        android:layout_weight="1.2"
+                        android:layout_gravity="center_vertical" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dsi_lane_4"
+                        android:id="@+id/lane4"
+                        android:layout_weight="1.2"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dsi_lane_dual"
+                        android:id="@+id/lane8"
+                        android:layout_weight="1.2"
+                        android:layout_gravity="center_vertical" />
+                </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/compression"
+                    android:textColor="@color/input_label_optional"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|center_vertical" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/compRadioGroup">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comp_none"
+                        android:id="@+id/none"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comp_half"
+                        android:id="@+id/half"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_vertical" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comp_one_third"
+                        android:id="@+id/oneThird"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_vertical" />
+                </RadioGroup>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3" >
+
+            <Button
+                android:id="@+id/calcButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/calc_button"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/historyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/history_button"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15" >
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/ppi"
+                    android:textColor="@color/result_label"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/ppiValueView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_text"
+                    android:layout_column="1"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_vertical" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/pixel"
+                    android:textColor="@color/result_label"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/pixelValueView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_text"
+                    android:layout_column="1"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_vertical" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/pixel_clock"
+                    android:textColor="@color/result_label"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/fClockView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_text"
+                    android:layout_column="1"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_vertical" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/dsi_clock"
+                    android:textColor="@color/result_label"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/dsiClkView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_text"
+                    android:layout_column="1"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_vertical" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/aspect_ratio"
+                    android:textColor="@color/result_label"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/ARView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_text"
+                    android:layout_column="1"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_vertical" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/display_physical_size"
+                    android:textColor="@color/result_label"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/sizeView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_text"
+                    android:layout_column="1"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_vertical" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/resolView"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:text="@string/no_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/summary"
+            android:gravity="center" />
+
+</LinearLayout>
+

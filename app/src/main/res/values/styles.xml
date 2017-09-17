@@ -1,0 +1,16 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    
+    <style name="MyButton" parent="android:Widget.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+    
+    <style name="MyTheme" parent="android:Theme.Holo">
+        <item name="android:buttonStyle">@style/MyButton</item>
+        
+    </style>
+
+</resources>

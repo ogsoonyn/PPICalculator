@@ -1,0 +1,40 @@
+<resources>
+
+    <string name="app_name">PPI Calc</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">PPI Calc</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="resolution">Resolution</string>
+    <string name="times">x</string>
+    <string name="calc_button">Calculate</string>
+    <string name="ppi">Pixel per Inch</string>
+    <string name="inch">Inch</string>
+    <string name="pixel">Pixel</string>
+    <string name="pixel_clock">Pixel Clock</string>
+    <string name="aspect_ratio">Aspect Ratio</string>
+    <string name="size_by_inch">Size (Inch)</string>
+    <string name="no_text">-</string>
+    <string name="history_button">History</string>
+    <string name="list_button">List</string>
+    <string name="historyButton">History</string>
+    <string name="history_list_filename">history_list.txt</string>
+    <string name="hw_name">Name</string>
+    <string name="size_by_mm">Size (mm)</string>
+    <string name="display_physical_size">Physical Size</string>
+    <string name="dsi_clock">DSI Clock</string>
+    <string name="frame_per_sec">FPS</string>
+    <string name="compression">Compression</string>
+    <string name="dsi_lane_number">DSI Lane</string>
+    <string name="refresh_rate">Refresh Rate</string>
+    <string name="comp_none">None</string>
+    <string name="comp_half">1/2</string>
+    <string name="comp_one_third">1/3</string>
+    <string name="dsi_lane_1">1</string>
+    <string name="dsi_lane_2">2</string>
+    <string name="dsi_lane_3">3</string>
+    <string name="dsi_lane_4">4</string>
+    <string name="dsi_lane_dual">8</string>
+    <string name="refresh_rate_default_str">60</string>
+
+</resources>
