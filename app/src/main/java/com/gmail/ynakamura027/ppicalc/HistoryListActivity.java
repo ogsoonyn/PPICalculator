@@ -24,7 +24,7 @@ public class HistoryListActivity extends ListActivity {
 
 		m_dps = new ArrayList<DisplayProperty>();
 
-		// �t���Ń��X�g�ɓ����
+		// 逆順でリストに入れる
 		int i=list.size()-1;
 		while( i >= 0 ){
 			Log.d("onCreate", "list - " + list.get(i) + " --> m_dps");
@@ -32,7 +32,7 @@ public class HistoryListActivity extends ListActivity {
 			i--;
 		}
 
-		// ���X�g�쐬
+		// リスト作成
 		ArrayAdapter<DisplayProperty> adapter = new ArrayAdapter<DisplayProperty>(
 				this, android.R.layout.simple_list_item_1, (DisplayProperty[])m_dps.toArray(new DisplayProperty[0]));
 

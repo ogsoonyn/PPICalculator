@@ -8,16 +8,16 @@ import android.util.Log;
 public class FileReadWrite {
 
 	/**
-	* ƒtƒ@ƒCƒ‹‘‚«‚İˆ—iString•¶š—ñËƒtƒ@ƒCƒ‹j
-	* @param sFilepath@‘‚«‚İƒtƒ@ƒCƒ‹ƒpƒX
-	* @param sOutdata@ƒtƒ@ƒCƒ‹o—Í‚·‚éƒf[ƒ^
-	* @param sEnctype@•¶šƒGƒ“ƒR[ƒh
+	* ãƒ•ã‚¡ã‚¤ãƒ«æ›¸ãè¾¼ã¿å‡¦ç†ï¼ˆStringæ–‡å­—åˆ—â‡’ãƒ•ã‚¡ã‚¤ãƒ«ï¼‰
+	* @param sFilepathã€€æ›¸ãè¾¼ã¿ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹
+	* @param sOutdataã€€ãƒ•ã‚¡ã‚¤ãƒ«å‡ºåŠ›ã™ã‚‹ãƒ‡ãƒ¼ã‚¿
+	* @param sEnctypeã€€æ–‡å­—ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰
 	*/
 	public static void writeFile(String sFilepath, String sOutdata, String sEnctype){
 
 		BufferedWriter bufferedWriterObj = null;
 		try {
-			//ƒtƒ@ƒCƒ‹o—ÍƒXƒgƒŠ[ƒ€‚Ìì¬
+			//ãƒ•ã‚¡ã‚¤ãƒ«å‡ºåŠ›ã‚¹ãƒˆãƒªãƒ¼ãƒ ã®ä½œæˆ
 			bufferedWriterObj = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(sFilepath, true), sEnctype));
 	
 			bufferedWriterObj.write(sOutdata);
@@ -35,10 +35,10 @@ public class FileReadWrite {
 	}
 
 	/**
-	* ƒtƒ@ƒCƒ‹“Ç‚İ‚İˆ—iƒtƒ@ƒCƒ‹ËString•¶š—ñj
-	* @param sFilepath@‘‚«‚İƒtƒ@ƒCƒ‹ƒpƒX
-	* @param sEnctype@•¶šƒGƒ“ƒR[ƒh
-	* @return@“Ç‚İ‚İ‚¾ƒtƒ@ƒCƒ‹ƒf[ƒ^•¶š—ñ
+	* ãƒ•ã‚¡ã‚¤ãƒ«èª­ã¿è¾¼ã¿å‡¦ç†ï¼ˆãƒ•ã‚¡ã‚¤ãƒ«â‡’Stringæ–‡å­—åˆ—ï¼‰
+	* @param sFilepathã€€æ›¸ãè¾¼ã¿ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹
+	* @param sEnctypeã€€æ–‡å­—ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰
+	* @returnã€€èª­ã¿è¾¼ã¿ã ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‡ãƒ¼ã‚¿æ–‡å­—åˆ—
 	*/
 	public static String readFile(String sFilepath, String sEnctype){
 
@@ -46,7 +46,7 @@ public class FileReadWrite {
 		BufferedReader bufferedReaderObj = null;
 	
 		try {
-			//“ü—ÍƒXƒgƒŠ[ƒ€‚Ìì¬
+			//å…¥åŠ›ã‚¹ãƒˆãƒªãƒ¼ãƒ ã®ä½œæˆ
 			bufferedReaderObj = new BufferedReader(new InputStreamReader(new FileInputStream(sFilepath), sEnctype));
 	
 		String sLine;
@@ -67,7 +67,7 @@ public class FileReadWrite {
 		return sData;
 	}
 
-	// ƒtƒ@ƒCƒ‹íœ‚Ìˆ—
+	// ãƒ•ã‚¡ã‚¤ãƒ«å‰Šé™¤ã®å‡¦ç†
 	public static void removeFile(String sFilepath){
 		File f =new File( sFilepath ); 
 		try{

@@ -114,7 +114,7 @@ public class DisplayProperty implements Serializable {
 
 		m_name = name;
 
-        // Å¬’lİ’è
+        // æœ€å°å€¤è¨­å®š
     	if( m_width<50){
     		m_width=50;
     	}
@@ -125,7 +125,7 @@ public class DisplayProperty implements Serializable {
     		m_inch=0.1;
     	}
 
-    	// ƒAƒXƒyƒNƒg”ä‚ğŒvZ
+    	// ã‚¢ã‚¹ãƒšã‚¯ãƒˆæ¯”ã‚’è¨ˆç®—
         int tmp;
         int a,b;
         if(m_width > m_height){
